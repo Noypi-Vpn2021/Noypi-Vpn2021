@@ -2,8 +2,11 @@
 
 - `https://iptv-org.github.io/iptv/index.country.m3u` (grouped by country)
 - `https://iptv-org.github.io/iptv/index.category.m3u` (grouped by category)
-- `https://iptv-org.github.io/iptv/index.language.m3u` (grouped by language)
 
+
+Or select one of the playlists from the list below.
+
+### By category
 
 <details>
 <summary>Expand</summary>
@@ -48,8 +51,16 @@
 	</tbody>
 </table>
 
+</details>
 
 
+### By country
+
+<details>
+<summary>Expand</summary>
+<br>
+
+<!-- prettier-ignore -->
 <table>
 	<thead>
 		<tr><th align="left">Country</th><th align="right">Channels</th><th align="left">Playlist</th></tr>
@@ -296,7 +307,23 @@
 
 </details>
 
+## For Developers
 
+In addition to the above methods, you can also get a list of all available channels in JSON format.
+
+To do this, you just have to make a GET request to:
+
+```
+https://iptv-org.github.io/iptv/channels.json
+```
+
+If successful, you should get the following response:
+
+<details>
+<summary>Expand</summary>
+<br>
+  
+```
 [
   ...
   {
